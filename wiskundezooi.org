@@ -1,0 +1,31 @@
+\pagebreak
+
+* Basisregels differentieren
+  - Met differentieren pak je de afgeleide van een functie, de helling. Hiermee kunnen veranderingen van de functie t.o.v de variabelen beredeneerd worden
+  - De afgeleide van een functie die constant is, is altijd 0:
+    - $f(x) = 27$, $f'(x) = 0$
+  - Voor \textit{n}-de graads vergelijkingen geldt de volgende regel:
+    - $f(x) = x^{n} \Rightarrow f'(x) = n \cdot x^{n-1}$
+  - Dit geldt ook voor gebroken vormen:
+    - $f(x) = \dfrac{1}{x} = x^{-1} \Rightarrow f'(x) = -1x^{-2} = \dfrac{-1}{x^{2}}$
+  - En voor wortels:
+    - $\sqrt{x} = x^{\dfrac{1}{2}} \Rightarrow f'(x) = \dfrac{1}{2}x^{-\dfrac{1}{2}} = \dfrac{1}{2}\dfrac{1}{\sqrt{2}}$ 
+      
+      
+      
+
+   
+* Differentiaalquotient/analytisch differentieren
+** Notatie:
+   $\dfrac{\Delta y}{\Delta x} = \dfrac{f(x+h) - f(x)}{h}$
+*** Aanpak:
+    - 1: Vul in
+    - 2: Bepaal differentiaalquotient $\dfrac{\Delta y}{\Delta x}$
+    - 3: Bepaal differentiequotient $y'(x) \dfrac{dy}{dx}$
+***** Voorbeeld:
+***** TODO
+* 
+
+      
+
+      
