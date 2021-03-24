@@ -9,11 +9,13 @@
   - Dit geldt ook voor gebroken vormen:
     - $f(x) = \dfrac{1}{x} = x^{-1} \Rightarrow f'(x) = -1x^{-2} = \dfrac{-1}{x^{2}}$
   - En voor wortels:
-    - $\sqrt{x} = x^{\dfrac{1}{2}} \Rightarrow f'(x) = \dfrac{1}{2}x^{-\dfrac{1}{2}} = \dfrac{1}{2}\dfrac{1}{\sqrt{2}}$ 
+    - $\sqrt{x} = x^{\dfrac{1}{2}} \Rightarrow f'(x) = \dfrac{1}{2}x^{-\dfrac{1}{2}} = \dfrac{1}{2}\dfrac{1}{\sqrt{2}}$
+  - Voor functies in de vorm f(x) = a \cdot g(x) geldt de volgende regel:
+    - $f(x) = a \cdot g(x) \Rightarrow f'(x) = a \cdot g'(x)$
+    - Dus:
+      - $f(x) = 6x^{3} \Rightarrow f'(x) = 6 \cdot 3x^{2} = 18x^{2}$
+    
       
-      
-      
-
    
 * Differentiaalquotient/analytisch differentieren
 ** Notatie:
@@ -24,7 +26,19 @@
     - 3: Bepaal differentiequotient $y'(x) \dfrac{dy}{dx}$
 ***** Voorbeeld:
 ***** TODO
-* 
+
+
+* Productregel
+** Notatie:
+
+
+* Kettingregel
+** Notatie:
+   
+* Quotientregel
+** Notatie:
+  
+
 
       
 
