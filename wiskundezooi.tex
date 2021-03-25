@@ -1,4 +1,4 @@
-% Created 2021-03-24 Wed 17:25
+% Created 2021-03-25 Thu 14:53
 % Intended LaTeX compiler: pdflatex
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
@@ -30,7 +30,7 @@
 \pagebreak
 
 \section{Basisregels differentieren}
-\label{sec:org21de3ec}
+\label{sec:orgd00dd11}
 \begin{itemize}
 \item Met differentieren pak je de afgeleide van een functie, de helling. Hiermee kunnen veranderingen van de functie t.o.v de variabelen beredeneerd worden
 \item De afgeleide van een functie die constant is, is altijd 0:
@@ -62,38 +62,84 @@
 
 
 \section{Differentiaalquotient/analytisch differentieren}
-\label{sec:orgc92253f}
+\label{sec:org47bdbe2}
 \subsection{Notatie:}
-\label{sec:org546f159}
+\label{sec:org4692fd5}
 \(\dfrac{\Delta y}{\Delta x} = \dfrac{f(x+h) - f(x)}{h}\)
 \subsubsection{Aanpak:}
-\label{sec:org1c113fc}
+\label{sec:orgfec14cc}
 \begin{itemize}
 \item 1: Vul in
 \item 2: Bepaal differentiaalquotient \(\dfrac{\Delta y}{\Delta x}\)
 \item 3: Bepaal differentiequotient \(y'(x) \dfrac{dy}{dx}\)
 \end{itemize}
+\subsubsection{Voorbeeld:}
+\label{sec:org60251be}
 \begin{enumerate}
-\item Voorbeeld:
-\label{sec:orgb4b4b4a}
 \item TODO
-\label{sec:orgc26817c}
+\label{sec:org16dcd6f}
 \end{enumerate}
 
 
 \section{Productregel}
-\label{sec:orgdfb2cb6}
+\label{sec:orga84dc42}
+Gebruiken bij functies waarbij veel termen in haakjes staan.
+Zonder dat je de haakjes uitwerkt, kan je met deze regel de afgeleide bepalen.
 \subsection{Notatie:}
-\label{sec:org70b9fad}
+\label{sec:org4116a33}
+\(p(x) = f(x) \cdot g(x) \Rightarrow p'(x) = f'(x) \cdot g(x) + f(x) \cdot g'(x)\)
+\subsubsection{Aanpak}
+\label{sec:orgf8676a9}
+\begin{itemize}
+\item 1: leid \textit{f(x)} af
+\item 2: leid \textit{g(x)} af
+\item 3: plaats in formulevorm en laat deze onvereenvoudigd staan
+\end{itemize}
+\subsubsection{Voorbeeld:}
+\label{sec:orgee0583e}
+\begin{itemize}
+\item \(g(x) = (x^{3}+2x-5)(x^{2}-6x+8)\)
+\item \([x^{3}+2x-5]' = 3x^{2}+2\)
+\item \([x^{2}-6x+8]' = 2x-6\)
+\item \(g'(x) = f'(x) \cdot p(x) + f(x) \cdot p'(x)\)
+\begin{itemize}
+\item \(\Rightarrow  (3x^{2}+2)(x^{2}-6x+8) + (x^{3}+2x-5)(2x-6)\)
+\end{itemize}
+\end{itemize}
+
 
 
 \section{Kettingregel}
-\label{sec:orgbb6d7f7}
+\label{sec:orgcd8f055}
+Gebruiken bij samengestelde functies, dus voor functies in functies
 \subsection{Notatie:}
-\label{sec:org2b355b6}
+\label{sec:org2e3521c}
+\(f(x) = g(h(x)) \Rightarrow f'(x) = g'(h(x)) \cdot h'(x)\)
+\subsubsection{Aanpak:}
+\label{sec:org6a0c404}
+\begin{itemize}
+\item 1: leid \textit{g(x)} af
+\item 2: leid \textit{h(x)} afgeleide
+\item 3: plaats in formulevorm
+\end{itemize}
+\subsubsection{Voorbeeld:}
+\label{sec:org6fe5313}
+\begin{itemize}
+\item \(f(x) = (2x-1)^{6}\)
+\item \(g'(x) = 6(2x-1)^{5}\)
+\item \(h'(x) = 2\)
+\item \(f'(x) = g'(h(x)) \cdot h'(x)\)
+\begin{itemize}
+\item \(\Rightarrow f'(x) = 6(2x-1)^5 \cdot 2\)
+\item \(f'(x) = 12(2x-1)^5\)
+\end{itemize}
+\end{itemize}
+
+
+
 
 \section{Quotientregel}
-\label{sec:org0d8cc43}
+\label{sec:org23f7804}
 \subsection{Notatie:}
-\label{sec:orgc850906}
+\label{sec:orgfa0278f}
 \end{document}

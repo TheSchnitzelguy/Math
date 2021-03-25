@@ -24,16 +24,46 @@
     - 1: Vul in
     - 2: Bepaal differentiaalquotient $\dfrac{\Delta y}{\Delta x}$
     - 3: Bepaal differentiequotient $y'(x) \dfrac{dy}{dx}$
-***** Voorbeeld:
+*** Voorbeeld:
 ***** TODO
 
 
 * Productregel
+  Gebruiken bij functies waarbij veel termen in haakjes staan.
+  Zonder dat je de haakjes uitwerkt, kan je met deze regel de afgeleide bepalen.
 ** Notatie:
+   $p(x) = f(x) \cdot g(x) \Rightarrow p'(x) = f'(x) \cdot g(x) + f(x) \cdot g'(x)$
+*** Aanpak
+    - 1: leid \textit{f(x)} af
+    - 2: leid \textit{g(x)} af
+    - 3: plaats in formulevorm en laat deze onvereenvoudigd staan
+*** Voorbeeld:
+    - $g(x) = (x^{3}+2x-5)(x^{2}-6x+8)$
+    - $[x^{3}+2x-5]' = 3x^{2}+2$
+    - $[x^{2}-6x+8]' = 2x-6$
+    - $g'(x) = f'(x) \cdot p(x) + f(x) \cdot p'(x)$
+      - $\Rightarrow  (3x^{2}+2)(x^{2}-6x+8) + (x^{3}+2x-5)(2x-6)$
+   
 
 
 * Kettingregel
+  Gebruiken bij samengestelde functies, dus voor functies in functies
 ** Notatie:
+   $f(x) = g(h(x)) \Rightarrow f'(x) = g'(h(x)) \cdot h'(x)$
+*** Aanpak:
+    - 1: leid \textit{g(x)} af
+    - 2: leid \textit{h(x)} afgeleide
+    - 3: plaats in formulevorm
+*** Voorbeeld:
+    - $f(x) = (2x-1)^{6}$
+    - $g'(x) = 6(2x-1)^{5}$
+    - $h'(x) = 2$
+    - $f'(x) = g'(h(x)) \cdot h'(x)$
+      - $\Rightarrow f'(x) = 6(2x-1)^5 \cdot 2$
+      - $f'(x) = 12(2x-1)^5$
+       
+   
+   
    
 * Quotientregel
 ** Notatie:
