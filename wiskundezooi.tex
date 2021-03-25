@@ -1,4 +1,4 @@
-% Created 2021-03-25 Thu 14:53
+% Created 2021-03-25 Thu 16:03
 % Intended LaTeX compiler: pdflatex
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
@@ -30,7 +30,7 @@
 \pagebreak
 
 \section{Basisregels differentieren}
-\label{sec:orgd00dd11}
+\label{sec:org0ee835c}
 \begin{itemize}
 \item Met differentieren pak je de afgeleide van een functie, de helling. Hiermee kunnen veranderingen van de functie t.o.v de variabelen beredeneerd worden
 \item De afgeleide van een functie die constant is, is altijd 0:
@@ -62,41 +62,41 @@
 
 
 \section{Differentiaalquotient/analytisch differentieren}
-\label{sec:org47bdbe2}
+\label{sec:org6a35f5b}
 \subsection{Notatie:}
-\label{sec:org4692fd5}
+\label{sec:orgdba9c7a}
 \(\dfrac{\Delta y}{\Delta x} = \dfrac{f(x+h) - f(x)}{h}\)
 \subsubsection{Aanpak:}
-\label{sec:orgfec14cc}
+\label{sec:orgfa7aa8b}
 \begin{itemize}
 \item 1: Vul in
 \item 2: Bepaal differentiaalquotient \(\dfrac{\Delta y}{\Delta x}\)
 \item 3: Bepaal differentiequotient \(y'(x) \dfrac{dy}{dx}\)
 \end{itemize}
 \subsubsection{Voorbeeld:}
-\label{sec:org60251be}
+\label{sec:org516e71c}
 \begin{enumerate}
 \item TODO
-\label{sec:org16dcd6f}
+\label{sec:org5d34dc6}
 \end{enumerate}
 
 
 \section{Productregel}
-\label{sec:orga84dc42}
+\label{sec:org6b2682d}
 Gebruiken bij functies waarbij veel termen in haakjes staan.
 Zonder dat je de haakjes uitwerkt, kan je met deze regel de afgeleide bepalen.
 \subsection{Notatie:}
-\label{sec:org4116a33}
+\label{sec:orgeafdd2b}
 \(p(x) = f(x) \cdot g(x) \Rightarrow p'(x) = f'(x) \cdot g(x) + f(x) \cdot g'(x)\)
 \subsubsection{Aanpak}
-\label{sec:orgf8676a9}
+\label{sec:org3de051c}
 \begin{itemize}
 \item 1: leid \textit{f(x)} af
 \item 2: leid \textit{g(x)} af
 \item 3: plaats in formulevorm en laat deze onvereenvoudigd staan
 \end{itemize}
 \subsubsection{Voorbeeld:}
-\label{sec:orgee0583e}
+\label{sec:org9740902}
 \begin{itemize}
 \item \(g(x) = (x^{3}+2x-5)(x^{2}-6x+8)\)
 \item \([x^{3}+2x-5]' = 3x^{2}+2\)
@@ -110,20 +110,20 @@ Zonder dat je de haakjes uitwerkt, kan je met deze regel de afgeleide bepalen.
 
 
 \section{Kettingregel}
-\label{sec:orgcd8f055}
+\label{sec:orgafe9936}
 Gebruiken bij samengestelde functies, dus voor functies in functies
 \subsection{Notatie:}
-\label{sec:org2e3521c}
+\label{sec:orgb24be95}
 \(f(x) = g(h(x)) \Rightarrow f'(x) = g'(h(x)) \cdot h'(x)\)
 \subsubsection{Aanpak:}
-\label{sec:org6a0c404}
+\label{sec:org35b71b5}
 \begin{itemize}
 \item 1: leid \textit{g(x)} af
 \item 2: leid \textit{h(x)} afgeleide
 \item 3: plaats in formulevorm
 \end{itemize}
 \subsubsection{Voorbeeld:}
-\label{sec:org6fe5313}
+\label{sec:orgb68b964}
 \begin{itemize}
 \item \(f(x) = (2x-1)^{6}\)
 \item \(g'(x) = 6(2x-1)^{5}\)
@@ -134,12 +134,33 @@ Gebruiken bij samengestelde functies, dus voor functies in functies
 \item \(f'(x) = 12(2x-1)^5\)
 \end{itemize}
 \end{itemize}
+\subsubsection{Kettingregel met wortelfuncties}
+\label{sec:orgdf0d884}
+In het geval van een samengestelde wortelfunctie, kan er een standaardregel worden toegepast:
+\(f(x) = \sqrt{p(x)} \Rightarrow f'(x) = \dfrac{1}{2\sqrt{p(x)}}\)
+\subsubsection{Voorbeeld:}
+\label{sec:orge4668c5}
+\begin{itemize}
+\item \(f(x) = \dfrac{3}{(x^{7}-5x^{2})}\)
+\item omschrijven naar vorm \(\dfrac{1}{x} \Rightarrow x^{-1}\)
+\begin{itemize}
+\item \(3(x^{7}-5x)^{-2}\)
+\end{itemize}
+\item \(f'(x) = -2 \cdot 3(x^{7}-5x)^{-3}\)
+\item differentieer \textit{h(x)}: \(x^{7}-5x \Rightarrow 7x^{6}-5\)
+\item Opstellen van vorm \(f'(x) = g'(h(x)) \cdot h'(x)\)
+\begin{itemize}
+\item \(f'(x) = -2 \cdot 3(x^{7}-5x)^{-3} \cdot (7x^{6}-5)\)
+\end{itemize}
+\end{itemize}
+
+
 
 
 
 
 \section{Quotientregel}
-\label{sec:org23f7804}
+\label{sec:orgfe461bd}
 \subsection{Notatie:}
-\label{sec:orgfa0278f}
+\label{sec:org880cea3}
 \end{document}
