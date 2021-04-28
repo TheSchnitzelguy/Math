@@ -1,4 +1,4 @@
-% Created 2021-03-25 Thu 16:03
+% Created 2021-04-28 Wed 12:12
 % Intended LaTeX compiler: pdflatex
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
@@ -28,9 +28,11 @@
 \tableofcontents
 
 \pagebreak
+\section{Differentieren}
+\label{sec:orgf05348e}
 
-\section{Basisregels differentieren}
-\label{sec:org0ee835c}
+\subsection{Basisregels differentieren}
+\label{sec:orgad9aec7}
 \begin{itemize}
 \item Met differentieren pak je de afgeleide van een functie, de helling. Hiermee kunnen veranderingen van de functie t.o.v de variabelen beredeneerd worden
 \item De afgeleide van een functie die constant is, is altijd 0:
@@ -61,42 +63,42 @@
 
 
 
-\section{Differentiaalquotient/analytisch differentieren}
-\label{sec:org6a35f5b}
-\subsection{Notatie:}
-\label{sec:orgdba9c7a}
+\subsection{Differentiaalquotient/analytisch differentieren}
+\label{sec:orgb5d5a01}
+\subsubsection{Notatie:}
+\label{sec:orge4580d8}
 \(\dfrac{\Delta y}{\Delta x} = \dfrac{f(x+h) - f(x)}{h}\)
 \subsubsection{Aanpak:}
-\label{sec:orgfa7aa8b}
+\label{sec:org0f94640}
 \begin{itemize}
 \item 1: Vul in
 \item 2: Bepaal differentiaalquotient \(\dfrac{\Delta y}{\Delta x}\)
 \item 3: Bepaal differentiequotient \(y'(x) \dfrac{dy}{dx}\)
 \end{itemize}
 \subsubsection{Voorbeeld:}
-\label{sec:org516e71c}
+\label{sec:orgcbb103c}
 \begin{enumerate}
 \item TODO
-\label{sec:org5d34dc6}
+\label{sec:orgb30e905}
 \end{enumerate}
 
 
-\section{Productregel}
-\label{sec:org6b2682d}
+\subsection{Productregel}
+\label{sec:orgcb94e51}
 Gebruiken bij functies waarbij veel termen in haakjes staan.
 Zonder dat je de haakjes uitwerkt, kan je met deze regel de afgeleide bepalen.
-\subsection{Notatie:}
-\label{sec:orgeafdd2b}
+\subsubsection{Notatie:}
+\label{sec:org7670d32}
 \(p(x) = f(x) \cdot g(x) \Rightarrow p'(x) = f'(x) \cdot g(x) + f(x) \cdot g'(x)\)
 \subsubsection{Aanpak}
-\label{sec:org3de051c}
+\label{sec:org7fe790d}
 \begin{itemize}
 \item 1: leid \textit{f(x)} af
 \item 2: leid \textit{g(x)} af
 \item 3: plaats in formulevorm en laat deze onvereenvoudigd staan
 \end{itemize}
 \subsubsection{Voorbeeld:}
-\label{sec:org9740902}
+\label{sec:org348fdbf}
 \begin{itemize}
 \item \(g(x) = (x^{3}+2x-5)(x^{2}-6x+8)\)
 \item \([x^{3}+2x-5]' = 3x^{2}+2\)
@@ -109,21 +111,21 @@ Zonder dat je de haakjes uitwerkt, kan je met deze regel de afgeleide bepalen.
 
 
 
-\section{Kettingregel}
-\label{sec:orgafe9936}
-Gebruiken bij samengestelde functies, dus voor functies in functies
-\subsection{Notatie:}
-\label{sec:orgb24be95}
+\subsection{Kettingregel}
+\label{sec:org653aacd}
+Gebruiken bij samengestelde functies, dus voor functies in functies en functies waarin een wortel zit.
+\subsubsection{Notatie:}
+\label{sec:orgab1823a}
 \(f(x) = g(h(x)) \Rightarrow f'(x) = g'(h(x)) \cdot h'(x)\)
 \subsubsection{Aanpak:}
-\label{sec:org35b71b5}
+\label{sec:orgfa5c059}
 \begin{itemize}
 \item 1: leid \textit{g(x)} af
 \item 2: leid \textit{h(x)} afgeleide
 \item 3: plaats in formulevorm
 \end{itemize}
 \subsubsection{Voorbeeld:}
-\label{sec:orgb68b964}
+\label{sec:org478b49f}
 \begin{itemize}
 \item \(f(x) = (2x-1)^{6}\)
 \item \(g'(x) = 6(2x-1)^{5}\)
@@ -135,13 +137,13 @@ Gebruiken bij samengestelde functies, dus voor functies in functies
 \end{itemize}
 \end{itemize}
 \subsubsection{Kettingregel met wortelfuncties}
-\label{sec:orgdf0d884}
+\label{sec:org9766b24}
 In het geval van een samengestelde wortelfunctie, kan er een standaardregel worden toegepast:
 \(f(x) = \sqrt{p(x)} \Rightarrow f'(x) = \dfrac{1}{2\sqrt{p(x)}}\)
 \subsubsection{Voorbeeld:}
-\label{sec:orge4668c5}
+\label{sec:org201ee68}
 \begin{itemize}
-\item \(f(x) = \dfrac{3}{(x^{7}-5x^{2})}\)
+\item \(f(x) = \dfrac{3}{(x^{7}-5x)^{2}}\)
 \item omschrijven naar vorm \(\dfrac{1}{x} \Rightarrow x^{-1}\)
 \begin{itemize}
 \item \(3(x^{7}-5x)^{-2}\)
@@ -151,16 +153,98 @@ In het geval van een samengestelde wortelfunctie, kan er een standaardregel word
 \item Opstellen van vorm \(f'(x) = g'(h(x)) \cdot h'(x)\)
 \begin{itemize}
 \item \(f'(x) = -2 \cdot 3(x^{7}-5x)^{-3} \cdot (7x^{6}-5)\)
+\begin{itemize}
+\item \(\Rightarrow \dfrac{-6(7x^{6}-5)}{(x^{7}-5x)^{3}}\)
+\end{itemize}
+\end{itemize}
+\end{itemize}
+
+
+
+
+\subsection{Quotientregel}
+\label{sec:orgd67cdfa}
+Heeft wat weg van het differentiaalquotient maar is wat anders. Te gebruiken bij gebroken functies. 
+\subsubsection{Notatie:}
+\label{sec:org6ec0c3c}
+\begin{equation}
+f(x) = \dfrac{g(x)}{h(x)} \Rightarrow f'(x) = \dfrac{g'(x) \cdot h(x) - g(x) \cdot h'(x)}{h^{2}(x)}
+\end{equation}
+
+Dit kan ook in een snellere vorm geschreven worden:
+
+\([\dfrac{t}{n}]' = \dfrac{NAT-TAN}{n^{2}}\) \\
+Waarbij \textit{N} = noemer \\
+\textit{AT} = afgeleide teller \\
+\textit{T} = teller \\
+\textit{AN} = afgeleide noemer
+
+\subsubsection{Aanpak:}
+\label{sec:org580d092}
+\begin{itemize}
+\item leid \textit{f(x)} af
+\item leid \textit{h(x)} af
+\item plaats in vorm  \(f'(x) = \dfrac{g'(x) \cdot h(x) - g(x) \cdot h'(x)}{h^{2}(x)}\)
+\end{itemize}
+
+\subsubsection{Voorbeeld:}
+\label{sec:orgf136f1f}
+\begin{itemize}
+\item \(q(x) = /dfrac{}{}\)
+\end{itemize}
+
+
+
+\subsection{Somregel}
+\label{sec:orgf68f9f1}
+Als we van twee functies een functie maken, dan is de afgeleide van die twee functies gelijk aan beide functies hun afgeleide
+\subsubsection{Notatie}
+\label{sec:orgaf68e53}
+\begin{equation}
+f(x) + g(x) = h(x) \Rightarrow f'(x) + g'(x) = h'(x)
+\end{equation}
+\subsubsection{Aanpak}
+\label{sec:org477117b}
+\begin{itemize}
+\item Stel \(f(x)\) bij \(g(x)\) op en maak hieruit \(h(x)\) op door deze simpelweg bij elkaar op te tellen
+\item Afgeleide bepalen is letterlijk \(h'(x)\)
+\end{itemize}
+
+\subsubsection{Voorbeeld}
+\label{sec:org219ae31}
+\begin{itemize}
+\item \(f(x) = 3x^{2}\)
+\item \(g(x) = x\)
+\item Samengestelde functie \(h(x)\) van \(f(x)\) en \(g(x)\) geeft:
+\begin{itemize}
+\item \(h(x) = 6x+x\)
+\end{itemize}
+\item Afleiden van beide losse functies geeft:
+\begin{itemize}
+\item \(f'(x) = 6x\)
+\item \(g'(x) = 1\)
+\end{itemize}
+\item De afgeleide functie \(h(x)\) geeft:
+\begin{itemize}
+\item \(h'(x) = 6x+1\)
 \end{itemize}
 \end{itemize}
 
 
+\section{Primitiveren}
+\label{sec:org31c8cf1}
+
+\subsection{Definitie en basisregels}
+\label{sec:org6a2cb5f}
+\begin{itemize}
+\item Met de primitieve kunnen we een gedifferentieerde functie terug benaderen naar de primitieve functie
+\begin{itemize}
+\item De exacte originele functie kunnen we niet terughalen, enkel beredeneerd
+\end{itemize}
+\item 
+\end{itemize}
 
 
-
-
-\section{Quotientregel}
-\label{sec:orgfe461bd}
-\subsection{Notatie:}
-\label{sec:org880cea3}
+\section{Integreren}
+\label{sec:org75c7b4e}
 \end{document}

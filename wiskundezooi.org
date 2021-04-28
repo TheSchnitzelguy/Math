@@ -1,25 +1,26 @@
 \pagebreak
-
-* Basisregels differentieren
-  - Met differentieren pak je de afgeleide van een functie, de helling. Hiermee kunnen veranderingen van de functie t.o.v de variabelen beredeneerd worden
-  - De afgeleide van een functie die constant is, is altijd 0:
-    - $f(x) = 27$, $f'(x) = 0$
-  - Voor \textit{n}-de graads vergelijkingen geldt de volgende regel:
-    - $f(x) = x^{n} \Rightarrow f'(x) = n \cdot x^{n-1}$
-  - Dit geldt ook voor gebroken vormen:
-    - $f(x) = \dfrac{1}{x} = x^{-1} \Rightarrow f'(x) = -1x^{-2} = \dfrac{-1}{x^{2}}$
-  - En voor wortels:
-    - $\sqrt{x} = x^{\dfrac{1}{2}} \Rightarrow f'(x) = \dfrac{1}{2}x^{-\dfrac{1}{2}} = \dfrac{1}{2}\dfrac{1}{\sqrt{2}}$
-  - Voor functies in de vorm f(x) = a \cdot g(x) geldt de volgende regel:
-    - $f(x) = a \cdot g(x) \Rightarrow f'(x) = a \cdot g'(x)$
-    - Dus:
-      - $f(x) = 6x^{3} \Rightarrow f'(x) = 6 \cdot 3x^{2} = 18x^{2}$
+* Differentieren
+  
+** Basisregels differentieren
+   - Met differentieren pak je de afgeleide van een functie, de helling. Hiermee kunnen veranderingen van de functie t.o.v de variabelen beredeneerd worden
+   - De afgeleide van een functie die constant is, is altijd 0:
+     - $f(x) = 27$, $f'(x) = 0$
+   - Voor \textit{n}-de graads vergelijkingen geldt de volgende regel:
+     - $f(x) = x^{n} \Rightarrow f'(x) = n \cdot x^{n-1}$
+   - Dit geldt ook voor gebroken vormen:
+     - $f(x) = \dfrac{1}{x} = x^{-1} \Rightarrow f'(x) = -1x^{-2} = \dfrac{-1}{x^{2}}$
+   - En voor wortels:
+     - $\sqrt{x} = x^{\dfrac{1}{2}} \Rightarrow f'(x) = \dfrac{1}{2}x^{-\dfrac{1}{2}} = \dfrac{1}{2}\dfrac{1}{\sqrt{2}}$
+   - Voor functies in de vorm f(x) = a \cdot g(x) geldt de volgende regel:
+     - $f(x) = a \cdot g(x) \Rightarrow f'(x) = a \cdot g'(x)$
+     - Dus:
+       - $f(x) = 6x^{3} \Rightarrow f'(x) = 6 \cdot 3x^{2} = 18x^{2}$
     
       
    
-* Differentiaalquotient/analytisch differentieren
-** Notatie:
-   $\dfrac{\Delta y}{\Delta x} = \dfrac{f(x+h) - f(x)}{h}$
+** Differentiaalquotient/analytisch differentieren
+*** Notatie:
+    $\dfrac{\Delta y}{\Delta x} = \dfrac{f(x+h) - f(x)}{h}$
 *** Aanpak:
     - 1: Vul in
     - 2: Bepaal differentiaalquotient $\dfrac{\Delta y}{\Delta x}$
@@ -28,11 +29,11 @@
 ***** TODO
 
 
-* Productregel
-  Gebruiken bij functies waarbij veel termen in haakjes staan.
-  Zonder dat je de haakjes uitwerkt, kan je met deze regel de afgeleide bepalen.
-** Notatie:
-   $p(x) = f(x) \cdot g(x) \Rightarrow p'(x) = f'(x) \cdot g(x) + f(x) \cdot g'(x)$
+** Productregel
+   Gebruiken bij functies waarbij veel termen in haakjes staan.
+   Zonder dat je de haakjes uitwerkt, kan je met deze regel de afgeleide bepalen.
+*** Notatie:
+    $p(x) = f(x) \cdot g(x) \Rightarrow p'(x) = f'(x) \cdot g(x) + f(x) \cdot g'(x)$
 *** Aanpak
     - 1: leid \textit{f(x)} af
     - 2: leid \textit{g(x)} af
@@ -46,10 +47,10 @@
    
 
 
-* Kettingregel
-  Gebruiken bij samengestelde functies, dus voor functies in functies
-** Notatie:
-   $f(x) = g(h(x)) \Rightarrow f'(x) = g'(h(x)) \cdot h'(x)$
+** Kettingregel
+   Gebruiken bij samengestelde functies, dus voor functies in functies en functies waarin een wortel zit.
+*** Notatie:
+    $f(x) = g(h(x)) \Rightarrow f'(x) = g'(h(x)) \cdot h'(x)$
 *** Aanpak:
     - 1: leid \textit{g(x)} af
     - 2: leid \textit{h(x)} afgeleide
@@ -65,24 +66,73 @@
     In het geval van een samengestelde wortelfunctie, kan er een standaardregel worden toegepast:
     $f(x) = \sqrt{p(x)} \Rightarrow f'(x) = \dfrac{1}{2\sqrt{p(x)}}$
 *** Voorbeeld:
-    - $f(x) = \dfrac{3}{(x^{7}-5x^{2})}$
+    - $f(x) = \dfrac{3}{(x^{7}-5x)^{2}}$
     - omschrijven naar vorm $\dfrac{1}{x} \Rightarrow x^{-1}$
       - $3(x^{7}-5x)^{-2}$
     - $f'(x) = -2 \cdot 3(x^{7}-5x)^{-3}$
     - differentieer \textit{h(x)}: $x^{7}-5x \Rightarrow 7x^{6}-5$
     - Opstellen van vorm $f'(x) = g'(h(x)) \cdot h'(x)$
       - $f'(x) = -2 \cdot 3(x^{7}-5x)^{-3} \cdot (7x^{6}-5)$
+        - $\Rightarrow \dfrac{-6(7x^{6}-5)}{(x^{7}-5x)^{3}}$
+ 
+   
+   
+   
+** Quotientregel
+   Heeft wat weg van het differentiaalquotient maar is wat anders. Te gebruiken bij gebroken functies. 
+*** Notatie:
+    \begin{equation}
+    f(x) = \dfrac{g(x)}{h(x)} \Rightarrow f'(x) = \dfrac{g'(x) \cdot h(x) - g(x) \cdot h'(x)}{h^{2}(x)}
+    \end{equation}
 
-        
-       
-   
-   
-   
-* Quotientregel
-** Notatie:
+Dit kan ook in een snellere vorm geschreven worden:
+
+$[\dfrac{t}{n}]' = \dfrac{NAT-TAN}{n^{2}}$ \\
+Waarbij \textit{N} = noemer \\
+\textit{AT} = afgeleide teller \\
+\textit{T} = teller \\
+\textit{AN} = afgeleide noemer
+
+*** Aanpak:
+    - leid \textit{f(x)} af
+    - leid \textit{h(x)} af
+    - plaats in vorm  $f'(x) = \dfrac{g'(x) \cdot h(x) - g(x) \cdot h'(x)}{h^{2}(x)}$
+
+*** Voorbeeld:
+    - $q(x) = /dfrac{}{}$
+
   
 
+** Somregel
+   Als we van twee functies een functie maken, dan is de afgeleide van die twee functies gelijk aan beide functies hun afgeleide
+*** Notatie
+    \begin{equation}
+    f(x) + g(x) = h(x) \Rightarrow f'(x) + g'(x) = h'(x)
+    \end{equation}
+*** Aanpak
+    - Stel $f(x)$ bij $g(x)$ op en maak hieruit $h(x)$ op door deze simpelweg bij elkaar op te tellen
+    - Afgeleide bepalen is letterlijk $h'(x)$
 
+*** Voorbeeld
+    - $f(x) = 3x^{2}$
+    - $g(x) = x$
+    - Samengestelde functie $h(x)$ van $f(x)$ en $g(x)$ geeft:
+      - $h(x) = 6x+x$
+    - Afleiden van beide losse functies geeft:
+      - $f'(x) = 6x$
+      - $g'(x) = 1$
+    - De afgeleide functie $h(x)$ geeft:
+      - $h'(x) = 6x+1$    
       
 
+* Primitiveren
+
+** Definitie en basisregels
+   - Met de primitieve kunnen we een gedifferentieerde functie terug benaderen naar de primitieve functie
+     - De exacte originele functie kunnen we niet terughalen, enkel beredeneerd
+   - 
+       
       
+* Integreren
+  
+
